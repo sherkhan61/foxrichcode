@@ -23,7 +23,7 @@ const ListBlocks = ({ reviews, domain }) => {
                     <Link to={`/page/${p.node.strapiId}/${p.node.link}`}>
                       <picture>
                         <img
-                          src={`${domain}${p.node.media.url}`}
+                          src={p.node.media.url}
                           alt={p.node.media.name} />
                       </picture>
                     </Link>

@@ -17,7 +17,7 @@ const BigBlock = ({ reviews, domain }) => {
                   <Link to={`/page/${d.node.strapiId}/${d.node.link}`}>
                     <picture>
                       <img
-                        src={`${domain}${d.node.media.url}`}
+                        src={d.node.media.url}
                         alt={d.node.media.name} />
                     </picture>
                   </Link>
@@ -57,7 +57,7 @@ const BigBlock = ({ reviews, domain }) => {
                     <Link to={`/page/${a.node.strapiId}/${a.node.link}`}>
                       <picture>
                         <img
-                          src={`${domain}${a.node.media.url}`}
+                          src={a.node.media.url}
                           alt={a.node.media.name} />
                       </picture>
                     </Link>

@@ -27,7 +27,7 @@ const WebListBlocks = ({ categories, domain }) => {
                     <Link to={`/page/${p.id}/${p.link}`}>
                       <picture>
                         <img
-                          src={`${domain}${p.media.url}`}
+                          src={p.media.url}
                           alt=""/>
                       </picture>
                     </Link>

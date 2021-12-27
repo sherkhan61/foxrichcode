@@ -26,7 +26,7 @@ const CyberBigBlock = ({ categories, domain }) => {
                   <Link to={`/page/${d.id}/${d.link}`}>
                     <picture>
                       <img
-                        src={`${domain}${d.media.url}`}
+                        src={d.media.url}
                         alt=""/>
                     </picture>
                   </Link>
@@ -54,7 +54,7 @@ const CyberBigBlock = ({ categories, domain }) => {
                   <Link to={`/page/${d.id}/${d.link}`}>
                     <picture>
                       <img
-                        src={`${domain}${d.media.url}`}
+                        src={d.media.url}
                         alt=""/>
                     </picture>
                   </Link>
@@ -86,7 +86,7 @@ const CyberBigBlock = ({ categories, domain }) => {
                       <Link to={`/page/${a.id}/${a.link}`}>
                         <picture>
                           <img
-                            src={`${domain}${a.media.url}`}
+                            src={a.media.url}
                             alt=""/>
                         </picture>
                       </Link>
