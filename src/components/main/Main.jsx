@@ -12,7 +12,7 @@ const Main = () => {
   const query = useStaticQuery(
     graphql`
       query MyQuery {
-      allStrapiArticles(sort: {fields: date, order: DESC}) {
+      allStrapiReviews(sort: {fields: date, order: DESC}) {
         edges {
           node {
             strapiId
