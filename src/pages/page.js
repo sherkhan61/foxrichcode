@@ -58,7 +58,7 @@ export default class Page extends React.Component {
 
   render() {
     let { data } = this.props
-    const review = data.strapiArticles
+    const review = data.strapiReviews
     const domain = `https://foxrichcode.com`
     const shareUrl = `${domain}/page/${review.strapiId}/${review.link}`
     const seoTitle = `${review.title} | Foxrichcode.com`
@@ -203,7 +203,7 @@ Page.propTypes = { data: PropTypes.any }
 
 export const query = graphql`
   query page($link: String) {
-    strapiArticles(link: {eq: $link}) {
+    strapiReviews(link: {eq: $link}) {
       strapiId
       title
       link

@@ -36,7 +36,7 @@ const Main = () => {
     `
   )
 
-  const reviews = query.allStrapiArticles.edges
+  const reviews = query.allStrapiReviews.edges
   const domain = `https://api-foxrichcode.herokuapp.com/`
 
   return (
